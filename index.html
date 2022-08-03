@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .info{
+            display: inline-block;
+            width: 200px;
+        }
+        #idea{
+            resize: none;
+            width: 250px;
+            height: 100px;
+        }
+    </style>
+    <title>İlk Form Tasarım</title>
+</head>
+<body>
+    <h1>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi</h1>
+    <br>
+    <fieldset>
+        <legend>Sözleşme Onay</legend>
+        <input type="radio" name="bilgi" id="bilgiler">
+        <label for="bilgiler">Aşağıdaki Bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi onaylıyorum</label>
+        <br>
+        <input type="button" value="Formu Kaydet" id="kaydet">
+        <input type="button" value="Formu Temizle" id="temizle">
+                
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <label class="info" for="ıd">Form Güvenlik ID</label>
+        <input type="text" id="ıd">
+        <br>
+        <label class="info" for="ad">Ad</label>
+        <input type="text" id="ad">
+        <br>
+        <label class="info" for="soyad">Soyad</label>
+        <input type="text" id="soyad">
+        <br>
+        <label class="info" for="yas">Yaş</label>
+        <input type="number" name="Yaşı" id="yas" min="18" max="99">
+        <br>
+        <label class="info" for="mail">Mail Adresi</label>
+        <input type="email" name="mail" id="mail">
+        <br>
+        <label class="info" for="foto">Fotoğraf Ekle</label>
+        <input type="file" name="foto" id="foto">
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend>Diğer Bilgiler</legend>
+        <p>Buradaki alanlar mesleki bilgileri kapsar</p>
+        <label for="giriş">Sektöre Giriş Tarihi</label>
+        <input style="margin-left: 90px;" type="date" name="" id="giriş">
+        <br>
+        <label for="deneyim">Sektör Deneyimi</label>
+        <input style="margin-left:110px ;" type="radio" name="" id="deneyim"> 1-5 Yıl
+        <br>
+        <input style="margin-left:223px ;" type="radio" name="" id="deneyim"> 6-10 Yıl
+        <br>
+        <input style="margin-left:223px ;" type="radio" name="" id="deneyim"> 11-15 Yıl
+        <br>
+        <input style="margin-left:223px ;" type="radio" name="" id="deneyim"> 15 Yıl Üzeri
+        <br>
+        <label for="diller">Programlama Dilleri</label>
+        <select style="margin-left: 87px;" name="" id="diller" size="4">
+            <option value="java">Java</option>
+            <option value="pyhton">Python</option>
+            <option value="c++">C++</option>
+            <option value="Php">Php</option>
+            <option value="Javascript">Javascript</option>
+
+        </select>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend>Sözleşme Kopyası</legend>
+        <textarea name="ideas" id="idea" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est officiis placeat. Minima cum laboriosam magni dolorem molestias at temporibus.
+        </textarea>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend>Mail Listesi</legend>
+        <br>
+        <label for="radio">Mail Listesine Katılmak istiyorum</label>
+        <input type="radio" name="radio" id="radio">
+        <br>
+        <label for="radio">Mail Listesine Katılmak istemiyorum</label>
+        <input type="radio" name="radio" id="radio">
+    </fieldset>
+
+    
+</body>
+</html>
